@@ -2,14 +2,8 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
+
 from blog.settings import base
-# from dotenv import load_dotenv
-# load_dotenv()
-
-# DEBUG = os.environ.get("DEBUG", "False").lower() == "true"
-# DEBUG = True
-# DEBUG = os.environ.get("DEBUG")
-
 
 def main():
     """Run administrative tasks."""
