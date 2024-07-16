@@ -5,6 +5,7 @@ import sys
 
 from blog.settings import base
 
+
 def main():
     """Run administrative tasks."""
 
