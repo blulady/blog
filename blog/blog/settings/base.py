@@ -31,7 +31,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 DEBUG = os.environ.get("DEBUG") == 'True'
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', "https://sarahsblog.up.railway.app/"]
-CSRF_TRUSTED_ORIGINS = ["https://sarahsblog.up.railway.app/", ]
+CSRF_TRUSTED_ORIGINS = ["https://sarahsblog.up.railway.app/"]
 
 # Application definition
 
@@ -127,14 +127,6 @@ USE_TZ = True
 STATIC_URL = "/static/"
 
 STATICFILES_DIRS = [BASE_DIR / "static"]
-
-# EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
-# EMAIL_HOST = 'smtp.gmail.com'
-# EMAIL_HOST_USER = 'ssanger2020@gmail.com'
-# EMAIL_HOST_PASSWORD = os.environ.get("EMAIL_HOST_PASSWORD")
-# EMAIL_PORT = 587
-# EMAIL_USE_TLS = True
-# EMAIL_USE_SSL = False
 
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 EMAIL_HOST = 'live.smtp.mailtrap.io'
